@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'home')" id="defaultOpen">Home</button>
+        <button class="tablinks" onclick="openTab(event, 'about')">About</button>
+        <button class="tablinks" onclick="openTab(event, 'contact')">Contact</button>
+    </div>
+    <div id="home" class="tabcontent">
+        <div class="intro">
+            <h1>Hi. I'm Nate.</h1>
+            <h2 class="intro-text">My front-end web development focuses on light-weight and interactive web design</h2>
+        </div>
+        <div class="portfolio-grid"> <!--Make this grid or flex depending on layout-->
+            <div class="project" id="project-one">
+                <img class="project-image" src= "images/todo.png">
+                <div class="project-overlay">
+                    <p class="project-description">A to do list with multi-purpose functionality</p>
+                    <button class="visit-project">Visit Project ➤</button>
+                </div>
+            </div>
+            <div class="project" id="project-two"> 
+                <img class="project-image" src= "images/todo.png">
+                <div class="project-overlay">
+                    <p class="project-description">Example 2 of project</p>
+                    <button class="visit-project">Visit Project ➤</button>
+                </div>
+            </div>
+            <div class="project" id="project-three" >
+                <img class="project-image" src= "images/todo.png">
+                <div class="project-overlay">
+                    <p class="project-description">Example 3 of project</p>
+                    <button class="visit-project">Visit Project ➤</button>
+                </div>
+            </div>
+            <div class="project" id="project-four" >
+                <img class="project-image" src= "images/todo.png">
+                <div class="project-overlay">
+                    <p class="project-description">Example 4 of project</p>
+                    <button class="visit-project">Visit Project ➤</button>
+                </div>
+            </div>
+            <div class="project" id="project-five">
+                <img class="project-image" src= "images/todo.png">
+                <div class="project-overlay">
+                    <p class="project-description">Example 5 of project</p>
+                    <button class="visit-project">Visit Project ➤</button>
+                </div>
+            </div>
+            <div class="project" id="project-six">
+                <img class="project-image" src= "images/todo.png">
+                <div class="project-overlay">
+                    <p class="project-description">Example 6 of project</p>
+                    <button class="visit-project">Visit Project ➤</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="tabcontent"> <!-- page two -->
+        <p id='about-me'>About Me</p>
+        <div class="bio">
+            <div class="bio-left">
+                <img class="bio-image" src="images/nate.png">
+            </div>
+            <div class="bio-right">
+                <h3>I'm a front-end web developer operating out of Scranton, PA. </h3>
+                <p class="bio-description">Over the past few months I've delved deep into website design for both desktop and mobile interfaces. With an eye for various lay-outs with clean, styilistic code I'm always eager to take on a new challenge. Check out some of my projects to see this in action!</p>
+            </div>
+        </div>
+      </div>
+      
+    <div id="contact" class="tabcontent">  <!-- page three -->
+        <form class="form-main">
+            <p class="form-help">How can I help you today?</p>
+            <div class="form-top">
+                <div class="form-top-left">
+                    <label class="lab" for="name">Your Name</label><br>
+                    <input class="top-entry" id="top-entry-one" type="text" id="name" name="name" placeholder="Enter your name"><br>
+                </div>
+                <div class="form-top-right">
+                    <label class="lab" for="email">Email Address</label><br>
+                    <input class="top-entry" type="text" id="email" name="email" placeholder="Enter your email address">
+                </div>
+            </div>
+            <div class="form-bottom">
+                <div class="form-bottom-center">
+                    <label class="message-label" for="message">Your Message</label>
+                    <br>
+                    <textarea class="bottom-entry" id="message" name="message" rows="12" cols="50" placeholder="Ex: I would like help with this project! Here are some relevant project details."></textarea>
+                    <br/>
+                </div>
+            </div>
+            <button class="submit">Submit</button>
+        </form>
+    </div>
+    <div class="footer" id="footer">
+        <p class="footer-text">© 2023 Nathan Goberdon</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
